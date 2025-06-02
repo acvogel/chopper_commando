@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cs8p8qeiuo7yx"]
+
+[ext_resource type="PackedScene" uid="uid://de8p7i7udva5" path="res://chopper.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bp8eu8igrac3h" path="res://terrain.tscn" id="2_0xm2m"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0xm2m"]
+
+[node name="Main" type="Node"]
+
+[node name="Chopper" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(400, 408)
+metadata/_edit_group_ = true
+
+[node name="Terrain" parent="." instance=ExtResource("2_0xm2m")]
+material = SubResource("CanvasItemMaterial_0xm2m")
+position = Vector2(3, 0)
+metadata/_edit_group_ = true
+
+[node name="Background" type="Polygon2D" parent="."]
+z_index = -5
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 0, 648, 1152, 648, 1152, 0)

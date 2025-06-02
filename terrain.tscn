@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bp8eu8igrac3h"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mqteh"]
+
+[node name="Terrain" type="StaticBody2D"]
+material = SubResource("ShaderMaterial_mqteh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(0, 648, 1152, 648, 1152, 440, 816, 440, 576, 256, 464, 424, 328, 424, 264, 544, 152, 408, 0, 408)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.141176, 0.513726, 0.227451, 1)
+polygon = PackedVector2Array(0, 648, 1152, 648, 1152, 440, 816, 440, 576, 256, 464, 424, 328, 424, 264, 544, 152, 408, 0, 408)
