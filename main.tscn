@@ -17,6 +17,7 @@ position = Vector2(3, 0)
 metadata/_edit_group_ = true
 
 [node name="Background" type="Polygon2D" parent="."]
+visible = false
 z_index = -5
 color = Color(0, 0, 0, 1)
 polygon = PackedVector2Array(0, 0, 0, 648, 1152, 648, 1152, 0)

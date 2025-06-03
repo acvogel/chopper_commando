@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi1kwqwvlp8jq"]
+
+[ext_resource type="Texture2D" uid="uid://bbpjbwbu3ldn0" path="res://boss-star-badge-achievement-512.webp" id="1_573fp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fn8o"]
+size = Vector2(32, 32)
+
+[node name="Bomb" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.52588e-05, 1.52588e-05)
+scale = Vector2(0.109375, 0.109375)
+texture = ExtResource("1_573fp")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4fn8o")

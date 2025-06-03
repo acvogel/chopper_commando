@@ -1,13 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://de8p7i7udva5"]
+[gd_scene load_steps=5 format=3 uid="uid://de8p7i7udva5"]
 
 [ext_resource type="Texture2D" uid="uid://ck2dyid84ct2k" path="res://paraplane1.png" id="1_2xgcc"]
 [ext_resource type="Script" uid="uid://cdk1k4qm1e1a" path="res://chopper.gd" id="1_48qdx"]
+[ext_resource type="PackedScene" uid="uid://bi1kwqwvlp8jq" path="res://bomb.tscn" id="2_41gt4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x44om"]
 size = Vector2(128, 32)
 
 [node name="Chopper" type="CharacterBody2D"]
 script = ExtResource("1_48qdx")
+bomb_scene = ExtResource("2_41gt4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_x44om")
